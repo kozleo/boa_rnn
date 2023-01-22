@@ -40,7 +40,7 @@ def get_real_eigs(A: Matrix) -> List:
     e, ev = np.linalg.eig(A)
     
     return np.real(e)
-    
+
 
 
 def get_local_lyapunov_metric(J: Matrix) -> Matrix:
@@ -94,9 +94,21 @@ def RNN_update(x, W):
 def RNN_update_jac(x, W):
     return -np.eye(x.shape[0]) + W @ np.diag(1 - np.tanh(x) ** 2)
 
+def latent_RNN_update(y, W, Q):
+    return -y + Q @ W @ np.tanh(Q.T @ y)
 
 
+def V(M: Matrix,Q:Matrix,x: Matrix) -> float:
+    y = Q @ x
+    return np.dot(y, (Q @ M @ Q.T) @ y)
 
+def V_dot(M: Matrix, W:Matrix, Q:Matrix, x: Matrix) -> float:
+
+    y = Q @ x
+    f_x = RNN_update(x, W)
+    f_y = Q @ f_x
+
+    return 2*np.dot(y, (Q @ M @ Q.T) @ f_y)
 
 
 
