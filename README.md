@@ -1,2 +1,3 @@
 # boa_rnn
-Tools for estimating basins of attraction in high-dimensional RNNs.
+
+A truly neutral research cookie cutter
