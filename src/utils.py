@@ -98,9 +98,9 @@ def latent_RNN_update(y, W, Q):
     return -y + Q @ W @ np.tanh(Q.T @ y)
 
 
-def V(M: Matrix,Q:Matrix,x: Matrix) -> float:
+def V(M: Matrix, Q:Matrix, x: Matrix) -> float:
     y = Q @ x
-    return np.dot(y, (Q @ M @ Q.T) @ y)
+    return np.diag(y.T @ (Q @ M @ Q.T) @ y)
 
 def V_dot(M: Matrix, W:Matrix, Q:Matrix, x: Matrix) -> float:
 
@@ -108,7 +108,9 @@ def V_dot(M: Matrix, W:Matrix, Q:Matrix, x: Matrix) -> float:
     f_x = RNN_update(x, W)
     f_y = Q @ f_x
 
-    return 2*np.dot(y, (Q @ M @ Q.T) @ f_y)
+    
+
+    return 2*np.diag(y.T @ (Q @ M @ Q.T) @ f_y)
 
 
 
