@@ -1,0 +1,2 @@
+/var/slurm/slurmd/job29159826/slurm_script: line 15: cd: /om2/user/leokoz8/code/boa_rnn/boa_rnn/boa_rnn: No such file or directory
+slurmstepd: error: *** JOB 29159826 ON node090 CANCELLED AT 2023-01-28T22:24:40 ***

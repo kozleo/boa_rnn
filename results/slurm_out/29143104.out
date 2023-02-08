@@ -1,0 +1,22 @@
+/var/slurm/slurmd/job29143104/slurm_script: line 15: cd: /om2/user/leokoz8/code/boa_rnn/boa_rnn/boa_rnn: No such file or directory
+[I 11:39:26.689 NotebookApp] [nb_conda_kernels] enabled, 9 kernels found
+[I 11:39:27.023 NotebookApp] Authentication of /metrics is OFF, since other authentication is disabled.
+[W 11:39:29.721 NotebookApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 11:39:29.722 NotebookApp] The port 9000 is already in use, trying another port.
+[W 2023-01-27 11:39:34.926 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-01-27 11:39:34.937 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-01-27 11:39:34.937 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-01-27 11:39:34.937 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-01-27 11:39:34.937 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-01-27 11:39:34.937 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-01-27 11:39:34.937 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-01-27 11:39:34.938 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-01-27 11:39:34.947 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2023-01-27 11:39:34.949 LabApp] JupyterLab extension loaded from /om/user/leokoz8/envs/boa_rnn/lib/python3.8/site-packages/jupyterlab
+[I 2023-01-27 11:39:34.949 LabApp] JupyterLab application directory is /om/user/leokoz8/envs/boa_rnn/share/jupyter/lab
+[I 11:39:34.956 NotebookApp] Serving notebooks from local directory: /net/vast-storage.ib.cluster/scratch/vast/fiete/leokoz8/code/boa_rnn
+[I 11:39:34.956 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 11:39:34.956 NotebookApp] http://node065.cm.cluster:9001/
+[I 11:39:34.956 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:40:11.875 NotebookApp] 404 GET /hub/api (172.16.20.254) 290.340000ms referer=None
+slurmstepd: error: *** JOB 29143104 ON node065 CANCELLED AT 2023-01-27T23:39:23 DUE TO TIME LIMIT ***
